@@ -43,17 +43,25 @@ $(function(){
             var week = map[key];
             week.len = 0;
             week.vlen = 0;
+            week.itemsCount = 0;
+            week.viewedCount = 0;
             for (var i = 0; i < week.sections.length; i++){
                 var section = week.sections[i];
                 section.len = 0;
                 section.vlen = 0;
+                section.viewedCount = 0;
                 for (var j = 0; j < section.items.length; j++){
                     var item = section.items[j];
                     section.len += item.len;
-                    if(item.viewed) section.vlen += item.len;
+                    if(item.viewed) {
+                        section.vlen += item.len;
+                        section.viewedCount++;
+                    }
                 }
                 week.len += section.len;
                 week.vlen += section.vlen;
+                week.itemsCount +=section.items.length;
+                week.viewedCount += section.viewedCount;
             }
             result.push(week);
         }

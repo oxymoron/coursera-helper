@@ -1,8 +1,89 @@
 body{
-    width: 200px;
-    height: 150px;
+    margin: 0;
+    width: 230px;
     background-color: #666;
     color: white;
     text-shadow: 0 -1px 1px #000;
     font-family: Arial, Helvetica, sans-serif
+}
+
+ul{
+    padding: 10px 0 0 0;
+    margin-bottom: 0;
+}
+
+li{
+    list-style: none;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+
+li span{
+    font-size: 11px;
+}
+
+.chart{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+.info{
+    position: absolute;
+    padding: 5px 0 0 65px;;
+}
+
+.stat{
+    position: absolute;
+    padding: 5px 0 0 150px;
+}
+
+.stat-wrap{
+    padding-left: 10px;
+    border-left: 1px solid #aaa;
+    height: 50px;
+}
+
+.percent{
+    font-size: 24px;
+}
+
+.values{
+    font-size: 18px;
+    padding: 0 0 0 0;
+    color: #ddd;
+}
+
+.header{
+    font-size: 20px;
+
+}
+
+.details{
+    font-size: 10px;
+    color: #ddd;
+    width: 70px;
+}
+
+div.details span{
+    position: absolute;
+    right: 0;
+}
+
+footer{
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    font-size: 9px;
+    text-shadow: none;
+    color: whitesmoke;
+}
+
+footer a{
+    text-shadow: none;
+    color: whitesmoke;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    outline: none;
 }
